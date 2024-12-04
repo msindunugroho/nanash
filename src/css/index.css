@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    /* * {outline: 1px solid red} */
+    body {
+        @apply bg-light-300 dark:bg-dark-300 text-dark-300 dark:text-light-100 font-poppins;
+    }
+}
+
+@layer utilities {
+    /* page layout */
+    .page-layout {
+      @apply py-8 flex flex-col gap-12 md:pb-10 md:pt-24 md:gap-16;
+    }
+  
+    /* component-layout */
+    .component-layout {
+      @apply px-8 flex flex-col gap-4;
+    }
+  
+    /* scrollbar hidden */
+    .hide-scrollbar {
+      scrollbar-width: none; /* Untuk Firefox */
+      -ms-overflow-style: none; /* Untuk Internet Explorer */
+    }
+  
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none; /* Untuk Chrome, Safari, dan Edge */
+    }
+  }
+  

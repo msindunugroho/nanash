@@ -118,7 +118,7 @@ export default {
     }),
     fontFamily: {
       poppins: ["Poppins", "serif"],
-      sourGummy: ["Sour Gummy", "sans-serif"],
+      "bruno_ace_sc": ["Bruno Ace SC", "Poppins", "serif"],
     },
     fontSize: {
       "4xs": ".375rem", // 6px
