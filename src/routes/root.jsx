@@ -1,16 +1,14 @@
 import { Outlet } from "react-router-dom";
-import Navigation from "../components/navigation/navigation";
+import RootNavigation from "../components/root-navigation/root-navigation";
+import RootFooter from "../components/root-footer/root-footer";
 
 const Root = () => {
     return(
         <main>
             <div className="main_container">
-                <Navigation />
+                <RootNavigation />
                 <Outlet/>
-                <footer>
-                    <div className="footer_container">
-                    </div>
-                </footer>
+                <RootFooter/>
             </div>
         </main>
     )

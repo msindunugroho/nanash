@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Root from './routes/root'
+import HomePage from './routes/home-page'
 import './css/index.css'
 
 const router = createBrowserRouter([
@@ -11,8 +12,8 @@ const router = createBrowserRouter([
     errorElement: "",
     children: [
       {
-        path: "",
-        element: "",
+        path: "/",
+        element: <HomePage/>,
       }
     ]
   }

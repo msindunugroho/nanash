@@ -9,15 +9,22 @@
     }
 }
 
+@layer components {
+  /* root button */
+  .btn {@apply text-sm md:text-base font-medium  capitalize px-4 py-1 rounded-md md:rounded-lg transition-colors duration-300}
+  .btn-primary {@apply bg-primary-300 text-tertiary-100 border-1 border-primary-100 hover:bg-primary-200 active:bg-primary-100 dark:bg-transparent-light-0 dark:border-2 dark:border-tertiary-300 dark:text-light-100}
+  .btn-tertiary {@apply bg-tertiary-300 text-light-100 border-1 border-tertiary-100 hover:bg-tertiary-200 active:bg-tertiary-100}
+}
+
 @layer utilities {
     /* page layout */
     .page-layout {
-      @apply py-8 flex flex-col gap-12 md:pb-10 md:pt-24 md:gap-16;
+      @apply py-24 flex flex-col gap-12 md:pb-10 md:pt-24 md:gap-16;
     }
   
     /* component-layout */
     .component-layout {
-      @apply px-8 flex flex-col gap-4;
+      @apply px-8 flex flex-col gap-4 md:px-12;
     }
   
     /* scrollbar hidden */

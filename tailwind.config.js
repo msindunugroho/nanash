@@ -95,17 +95,16 @@ export default {
       secondary: theme("colors.secondary"),
       tertiary: theme("colors.tertiary"),
       accent: theme("colors.accent"),
+      transparent: theme("colors.transparent"),
       light: {
         100: "#FFFFFF",
         200: "#EDFAFD",
         300: "#DBF5FA",
-        transparent: theme("colors.light.transparent"),
       },
       dark: {
         100: "#072E36",
         200: "#051F24",
         300: "#020F12",
-        transparent: theme("colors.dark.transparent"),
       },
     }),
     fill: (theme) => ({
