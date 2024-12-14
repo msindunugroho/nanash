@@ -7,7 +7,7 @@ const NavigationTemplatesPage = () => {
   const [headerData, setHeaderData] = useState(null)
 
   useEffect(() => {
-    const templateData = templateComponents.find(data => data.id === "nav");
+    const templateData = templateComponents.find(data => data.id === "navigation-templates");
     if(templateData) {
       setHeaderData( { title: templateData.title, description: templateData.description, id: templateData.id })
       setComponentsData(templateData.data)

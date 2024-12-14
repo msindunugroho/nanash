@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const NavItemDropdown = ({ textContent, dropdownData, isActivePage, isActivePageHandler, isNavItemDropdown, navItemDropdownHandler }) => {
   const parentTextContent = textContent
   return(
-    <li className={`flex items-end text-base capitalize px-4 transition-all duration-300 sm:px-8 md:relative md:h-full md:px-0 `}>
+    <li className={`flex flex-col capitalize px-4 transition-all duration-300 sm:px-8 md:relative md:h-full md:px-0 `}>
     <button
       aria-expanded={isNavItemDropdown}
       aria-label="expand nav link"

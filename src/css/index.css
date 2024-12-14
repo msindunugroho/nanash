@@ -5,7 +5,7 @@
 @layer base {
     /* * {outline: 1px solid red} */
     body {
-        @apply bg-light-500 text-dark-900 text-base font-poppins dark:bg-dark-500 dark:text-light-100;
+        @apply bg-light-500 text-dark-900 text-base font-poppins dark:bg-dark-600 dark:text-light-100;
     }
     h1 {@apply text-7xl}
     h2 {@apply text-5xl}
