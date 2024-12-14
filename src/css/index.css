@@ -5,22 +5,27 @@
 @layer base {
     /* * {outline: 1px solid red} */
     body {
-        @apply bg-light-300 dark:bg-dark-300 text-dark-300 dark:text-light-100 font-poppins;
+        @apply bg-light-500 text-dark-900 text-base font-poppins dark:bg-dark-500 dark:text-light-100;
     }
+    h1 {@apply text-7xl}
+    h2 {@apply text-5xl}
+    h3 {@apply text-3xl}
+    h4 {@apply text-xl}
+    h5 {@apply text-lg}
+    h6 {@apply text-base}
+    p {@apply text-base}
 }
 
 @layer components {
   /* root button */
-  .btn {@apply text-sm md:text-base font-medium  capitalize px-4 py-1 rounded-md md:rounded-lg transition-colors duration-300}
-  .btn-primary {@apply bg-primary-300 text-tertiary-100 border-1 border-primary-100 hover:bg-primary-200 active:bg-primary-100 dark:bg-transparent-light-0 dark:border-2 dark:border-tertiary-300 dark:text-light-100}
-  .btn-tertiary {@apply bg-tertiary-300 text-light-100 border-1 border-tertiary-100 hover:bg-tertiary-200 active:bg-tertiary-100}
+  .btn-primary {@apply bg-primary-500 text-light-100  hover:bg-primary-600 active:bg-primary-700 dark:bg-transparent-light-0 dark:border-2 dark:border-tertiary-500 dark:text-light-100}
+  .btn-secondary {@apply bg-secondary-500 text-light-100 hover:bg-secondary-600 active:bg-secondary-700 dark:bg-transparent-light-0 dark:border-2 dark:border-tertiary-500 dark:text-light-100}
+  .btn-tertiary {@apply bg-tertiary-600 text-light-500 border-1 border-tertiary-300 hover:bg-tertiary-600 active:bg-tertiary-700 dark:bg-tertiary-500 dark:border-2 dark:border-tertiary-500 dark:text-light-100}
+  .btn-accent {@apply bg-accent-600 text-light-500 border-1 border-accent-300 hover:bg-accent-600 active:bg-accent-700 dark:bg-accent-500 dark:border-2 dark:border-accent-500 dark:text-light-100}
 }
 
 @layer utilities {
-    /* page layout */
-    .page-layout {
-      @apply py-24 flex flex-col gap-12 md:pb-10 md:pt-24 md:gap-16;
-    }
+  .page-layout {@apply py-24 flex flex-col gap-12 md:pb-10 md:pt-24 md:gap-16;}
   
     /* component-layout */
     .component-layout {

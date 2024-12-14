@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Root from './routes/root'
 import HomePage from './routes/home-page'
 import './css/index.css'
+import NavigationTemplatesPage from './routes/navigation-templates-page'
+import NameDefault from './components/navigation-templates/_lab/Name-Default'
 
 const router = createBrowserRouter([
   {
@@ -13,14 +15,23 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <HomePage/>,
-      }
+        element: <HomePage />,
+      },
+      {
+        path:"/lab",
+        element: <NameDefault />
+      },
+      {
+        path: "/components/navigation-templates",
+        element: <NavigationTemplatesPage />,
+      },
     ]
-  }
+  },
+
 ])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </StrictMode>,
 )

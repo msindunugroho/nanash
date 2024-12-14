@@ -1,0 +1,11 @@
+<Header
+              isActivePage={isActivePage}
+              isMenuDropdown={isMenuDropdown}
+              setIsActivePage={setIsActivePage}
+              setIsMenuDropdown={setIsMenuDropdown} />
+            <Body
+              isActivePage={isActivePage}
+              isMenuDropdown={isMenuDropdown}
+              isProductDropdown={isProductDropdown}
+              setIsActivePage={setIsActivePage}
+              setIsProductDropDown={setIsProductDropDown} />

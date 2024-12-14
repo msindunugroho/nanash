@@ -4,13 +4,15 @@ import RootFooter from "../components/root-footer/root-footer";
 
 const Root = () => {
     return(
-        <main>
-            <div className="main_container">
-                <RootNavigation />
-                <Outlet/>
-                <RootFooter/>
-            </div>
-        </main>
+      <main>
+        <div className="main_container">
+          <RootNavigation />
+          <div className="content page-layout">
+            <Outlet />
+          </div>
+          <RootFooter />
+        </div>
+      </main>
     )
 }
 
