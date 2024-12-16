@@ -8,7 +8,7 @@ const handleCopyCommand = (command) => {
   });
 };
 
-const ComponentShowcase = ({ componentsData, headerData }) => {
+const ComponentsShowcase = ({ componentsData, headerData }) => {
   return(
     <section className="component-showcase">
       <div className="component-showcase_container flex flex-col gap-16">
@@ -77,4 +77,4 @@ const ComponentShowcase = ({ componentsData, headerData }) => {
   )
 }
 
-export default ComponentShowcase;
+export default ComponentsShowcase;
